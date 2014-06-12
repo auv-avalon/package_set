@@ -1,11 +1,14 @@
 if package_enabled?("orogen")
     
-orogen_package 'avalon/orogen/asv_localization'
+orogen_package 'auv_avalon/orogen/asv_localization'
+orogen_package 'auv_avalon/orogen/avalon_back'
+orogen_package 'auv_avalon/orogen/avalon_front'
 
 in_flavor 'master','next' do
-    orogen_package 'avalon/orogen/uw_particle_localization'
-    orogen_package 'avalon/orogen/sonar_wall_hough'
-    orogen_package 'avalon/orogen/wall_servoing'
+    orogen_package 'auv_avalon/orogen/uw_particle_localization'
+    orogen_package 'auv_avalon/orogen/sonar_wall_hough'
+    orogen_package 'auv_avalon/orogen/wall_servoing'
+    orogen_package 'auv_avalon/orogen/sonar_feature_estimator'
 end
 
 
@@ -40,14 +43,11 @@ end
 #orogen_package 'avalon/orogen/buoydetector'
 ##orogen_package 'avalon/orogen/simulationGUI' #depricated
 #
-#orogen_package 'avalon/orogen/avalonBack'
-#orogen_package 'avalon/orogen/avalonFront'
 #orogen_package 'avalon/orogen/visual_odometry_deployment'
 #orogen_package 'avalon/orogen/depth_map'
 #orogen_package 'image_processing/orogen/pipeline_inspection'
 #
 #in_flavor 'master','next' do
-#    orogen_package 'avalon/orogen/sonar_feature_estimator'
 ##    orogen_package 'avalon/orogen/battery_management' #depricated
 #    orogen_package 'drivers/orogen/audio_reader'
 #    orogen_package 'avalon/orogen/auv_waypoint_navigator'

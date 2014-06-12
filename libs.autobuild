@@ -3,10 +3,12 @@
 
 bundle_package 'bundles/avalon'
 in_flavor 'master','next' do
-    cmake_package 'avalon/uw_localization'
-    cmake_package 'avalon/sonar_wall_hough'
-    cmake_package 'avalon/sonar_detectors'
-    cmake_package 'avalon/types'
+    cmake_package 'auv_avalon/uw_localization'
+    cmake_package 'auv_avalon/sonar_wall_hough'
+    cmake_package 'auv_avalon/sonar_detectors'
+    cmake_package 'auv_avalon/types'
+    cmake_package 'auv_avalon/dsp_acoustics'
+    cmake_package 'auv_avalon/machine_learning'
 end
 
 
@@ -32,9 +34,7 @@ end
 #
 #in_flavor 'master','next' do
 #    cmake_package 'avalon/visual_detectors'
-#    cmake_package 'avalon/machine_learning'
 #    cmake_package 'drivers/audio_reader'
-#    cmake_package 'avalon/dsp_acoustics'
 #    cmake_package 'avalon/pingersearch'
 #    cmake_package 'avalon/asv_detector'
 #    cmake_package 'avalon/avalontools'

@@ -14,6 +14,9 @@ in_flavor 'master','next' do
     orogen_package 'auv_avalon/orogen/sonar_feature_estimator'
     orogen_package 'auv_avalon/orogen/buoy'
     orogen_package 'auv_avalon/orogen/lights'
+    orogen_package 'simulation/orogen/avalon_simulation' do | pkg |
+    	Autoproj.env_add_path "RUBYLIB", File.join(pkg.srcdir, "ruby")
+    end
 end
 
 

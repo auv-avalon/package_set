@@ -1,7 +1,7 @@
 # Use GITORIOUS_ROOT and GITORIOUS_PUSH_ROOT for the packages that are on Gitorious
 # Use SPACEGIT_ROOT and SPACEGIT_PUSH_ROOT for the packages that are on spacegit
 
-name: auv_valon
+name: auv_avalon
 
 #imports:
 #  - spacegit: rock-dfki/package_set

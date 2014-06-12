@@ -25,5 +25,5 @@ version_control:
       branch: $ROCK_FLAVOR 
     
   - image_processing/orogen/pipeline_inspection:
-      github: auv-avalon/$PACKAGE_BASENAME 
+      github: auv-avalon/orogen-$PACKAGE_BASENAME 
       branch: $ROCK_FLAVOR 

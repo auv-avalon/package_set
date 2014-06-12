@@ -3,6 +3,7 @@ if package_enabled?("orogen")
 orogen_package 'auv_avalon/orogen/asv_localization'
 orogen_package 'auv_avalon/orogen/avalon_back'
 orogen_package 'auv_avalon/orogen/avalon_front'
+orogen_package 'auv_avalon/orogen/low_level_driver'
 orogen_package 'image_processing/orogen/pipeline_inspection'
 
 in_flavor 'master','next' do
@@ -10,6 +11,8 @@ in_flavor 'master','next' do
     orogen_package 'auv_avalon/orogen/sonar_wall_hough'
     orogen_package 'auv_avalon/orogen/wall_servoing'
     orogen_package 'auv_avalon/orogen/sonar_feature_estimator'
+    orogen_package 'auv_avalon/orogen/buoy'
+    orogen_package 'auv_avalon/orogen/lights'
 end
 
 
@@ -24,7 +27,6 @@ end
 #orogen_package 'avalon/orogen/sysmon'
 ##orogen_package 'avalon/orogen/asv'
 #orogen_package 'avalon/orogen/modemCanReader'
-#orogen_package 'avalon/orogen/lowLevelDriver'
 #orogen_package 'avalon/orogen/stateEstimator'
 #orogen_package 'avalon/orogen/movement_experiment'
 #orogen_package 'avalon/orogen/rotation_experiment'
@@ -58,7 +60,6 @@ end
 #    orogen_package 'avalon/orogen/rawControlCommandConverter'
 #    orogen_package 'avalon/orogen/avalonControl'
 #    orogen_package 'avalon/orogen/avalon_base'
-#    orogen_package 'avalon/orogen/lights'
 ##    orogen_package 'avalon/orogen/avalon_simulation_deployment' #depricated use avalon_simulation instead
 #    orogen_package 'simulation/orogen/avalon_simulation' do | pkg |
 #    	Autoproj.env_add_path "RUBYLIB", File.join(pkg.srcdir, "ruby")

@@ -1,0 +1,29 @@
+# Use GITORIOUS_ROOT and GITORIOUS_PUSH_ROOT for the packages that are on Gitorious
+# Use SPACEGIT_ROOT and SPACEGIT_PUSH_ROOT for the packages that are on spacegit
+
+name: auv_valon
+
+#imports:
+#  - spacegit: rock-dfki/package_set
+# TODO fix imports
+
+version_control:
+  - auv_avalon/.*:
+    github: auv_avalon/$PACKAGE_BASENAME 
+    branch: $ROCK_FLAVOR
+  
+  - auv_avalon/orogen/.*:
+    github: auv_avalon/orogen-$PACKAGE_BASENAME 
+    branch: $ROCK_FLAVOR
+
+  - bundles/avalon:
+    github: auv_avalon/bundle
+    branch: $ROCK_FLAVOR
+
+  - image_processing/pipeline_inspection:
+    github: auv_avalon/$PACKAGE_BASENAME 
+    branch: $ROCK_FLAVOR 
+    
+  - image_processing/orogen/pipeline_inspection:
+    github: auv_avalon/$PACKAGE_BASENAME 
+    branch: $ROCK_FLAVOR 

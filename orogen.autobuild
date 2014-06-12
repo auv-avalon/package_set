@@ -1,0 +1,74 @@
+if package_enabled?("orogen")
+    
+orogen_package 'avalon/orogen/asv_localization'
+
+in_flavor 'master','next' do
+    orogen_package 'avalon/orogen/uw_particle_localization'
+    orogen_package 'avalon/orogen/sonar_wall_hough'
+    orogen_package 'avalon/orogen/wall_servoing'
+end
+
+
+#import_package 'scripts'
+#
+#import_package 'avalon/gui/base-station'
+#import_package 'avalon/gui/task-monitoring'
+#
+#orogen_package 'drivers/orogen/camera_aravis'
+#orogen_package 'avalon/orogen/proxy'
+#orogen_package 'avalon/orogen/gold_piezo'
+#orogen_package 'avalon/orogen/sysmon'
+##orogen_package 'avalon/orogen/asv'
+#orogen_package 'avalon/orogen/modemCanReader'
+#orogen_package 'avalon/orogen/lowLevelDriver'
+#orogen_package 'avalon/orogen/stateEstimator'
+#orogen_package 'avalon/orogen/movement_experiment'
+#orogen_package 'avalon/orogen/rotation_experiment'
+#orogen_package 'avalon/orogen/depth_reader'
+#orogen_package 'avalon/orogen/laserToPosition'
+#orogen_package 'avalon/orogen/asv'
+#orogen_package 'avalon/orogen/parameter_identification'
+#orogen_package 'avalon/orogen/waypoint_creator'
+#orogen_package 'dagon/orogen/uwv_dynamic_model' #Dynamic model
+#
+##orogen_package 'avalon/orogen/movementGUI' #depriated
+##orogen_package 'avalon/orogen/sonarGUI' #depricated
+#orogen_package 'avalon/orogen/ekfSLAM'
+#orogen_package 'avalon/orogen/motionEstimation'
+#orogen_package 'avalon/orogen/piplineTracker'
+#orogen_package 'avalon/orogen/testbedServoing'
+#orogen_package 'avalon/orogen/buoydetector'
+##orogen_package 'avalon/orogen/simulationGUI' #depricated
+#
+#orogen_package 'avalon/orogen/avalonBack'
+#orogen_package 'avalon/orogen/avalonFront'
+#orogen_package 'avalon/orogen/visual_odometry_deployment'
+#orogen_package 'avalon/orogen/depth_map'
+#orogen_package 'image_processing/orogen/pipeline_inspection'
+#
+#in_flavor 'master','next' do
+#    orogen_package 'avalon/orogen/sonar_feature_estimator'
+##    orogen_package 'avalon/orogen/battery_management' #depricated
+#    orogen_package 'drivers/orogen/audio_reader'
+#    orogen_package 'avalon/orogen/auv_waypoint_navigator'
+#    orogen_package 'avalon/orogen/pingersearch'
+#    orogen_package 'avalon/orogen/rear_sonar_distance_estimator'
+#    orogen_package 'avalon/orogen/asv_detector'
+#    orogen_package 'avalon/orogen/buoy'
+#    orogen_package 'avalon/orogen/rawControlCommandConverter'
+#    orogen_package 'avalon/orogen/avalonControl'
+#    orogen_package 'avalon/orogen/avalon_base'
+#    orogen_package 'avalon/orogen/lights'
+##    orogen_package 'avalon/orogen/avalon_simulation_deployment' #depricated use avalon_simulation instead
+#    orogen_package 'simulation/orogen/avalon_simulation' do | pkg |
+#    	Autoproj.env_add_path "RUBYLIB", File.join(pkg.srcdir, "ruby")
+#    end
+#end
+#
+#
+## conquest_2012-05-03: add dagon's orientation estimator (now on rock) because it is only added for master on remotes/rock/
+##orogen_package 'slam/orogen/orientation_estimator'
+
+else
+  Autoproj.warn "orogen is not enabled, skipping the orogen packages"
+end

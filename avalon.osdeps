@@ -1,0 +1,43 @@
+# Currently Empty
+portaudio:
+  debian,ubuntu: portaudio19-dev
+  gentoo: portaudio
+  arch: portaudio
+glut:
+    debian,ubuntu: freeglut3-dev
+    gentoo: virtual/glut
+    arch: freeglut
+qwt-qt4:
+    debian,ubuntu: libqwt5-qt4-dev
+    gentoo: x11-libs/qwt
+qwt:
+    debian,ubuntu: libqwt5-qt4-dev
+    gentoo: x11-libs/qwt
+valgrind:
+    debian,ubuntu: valgrind
+    gentoo: dev-util/valgrind
+    arch: valgrind
+fftw:
+    gentoo: sci-libs/fftw
+    debian,ubuntu: libfftw3-dev
+    arch: fftw 
+libsnd:
+    debian,ubuntu: libsndfile1-dev
+intltool:
+    debian,ubuntu: intltool
+    gentoo: intltool
+ncurses:
+    debian,ubuntu: libncurses5-dev
+libconfig:
+    debian,ubuntu: libconfig-dev
+libconfig++:
+    debian,ubuntu: libconfig++-dev
+gobject-introspection:
+    debian,ubuntu: gobject-introspection
+gstreamer:
+    debian,ubuntu: libgstreamer1.0-dev
+gtk+-2.0:
+    debian,ubuntu: libgtk2.0-0
+gtk-doc-tools:
+    debian,ubuntu: gtk-doc-tools
+pry: gem 

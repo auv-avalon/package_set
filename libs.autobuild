@@ -1,0 +1,65 @@
+# Define here packages that are not dependent on orogen
+
+
+bundle_package 'bundles/avalon'
+in_flavor 'master','next' do
+    cmake_package 'avalon/uw_localization'
+    cmake_package 'avalon/sonar_wall_hough'
+    cmake_package 'avalon/sonar_detectors'
+    cmake_package 'avalon/types'
+end
+
+
+### To be moved
+
+#cmake_package 'avalon/arc-ocu'
+#cmake_package 'avalon/stateEstimator'
+#cmake_package 'avalon/lowLevelDriver'
+#cmake_package 'avalon/sonarHelper'
+#cmake_package 'avalon/ekf_slam'
+#cmake_package 'avalon/can_shell_gateway'
+#cmake_package 'avalon/communication'
+#cmake_package 'dagon/uwv_dynamic_model'
+#
+##cmake_package 'avalon/gui/movement' #depricated
+##cmake_package 'avalon/gui/rangeScanner' #depricated
+##cmake_package 'avalon/gui/sonar' #depricated
+#cmake_package 'avalon/rotation_lib'
+#cmake_package 'avalon/avalonModel'
+#cmake_package 'drivers/camera_aravis'
+#cmake_package 'avalon/modemdriver_tritech'
+#import_package 'avalon/gui-base-station'
+#
+#in_flavor 'master','next' do
+#    cmake_package 'avalon/visual_detectors'
+#    cmake_package 'avalon/machine_learning'
+#    cmake_package 'drivers/audio_reader'
+#    cmake_package 'avalon/dsp_acoustics'
+#    cmake_package 'avalon/pingersearch'
+#    cmake_package 'avalon/asv_detector'
+#    cmake_package 'avalon/avalontools'
+#    cmake_package 'image_processing/pipeline_inspection'
+#    cmake_package 'simulation/mars-plugins/avalon-plugin'
+#    cmake_package 'simulation/mars-plugins/marsusim'
+#    cmake_package 'simulation/osgOcean' do |pkg|
+#         pkg.define("USE_FFTSS", "OFF")
+#         pkg.define("USE_FFTW3", "OFF")
+#         pkg.define("USE_FFTW3F", "ON")
+#    end
+#    autotools_package "avalon/nlopt" do |pkg|
+#        pkg.builddir = "."
+#        pkg.configureflags = ["--enable-shared"]
+#        pkg.using[:autoconf] = false
+#        pkg.using[:automake] = false
+#        #pkg.using[:aclocal] = false
+#        #pkg.using[:libtool] = false
+#        # additional configuration
+#    end
+#
+#end
+
+
+    
+
+#cmake_package 'avalon/gui/avalonsimulator' #depricated
+

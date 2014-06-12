@@ -5,6 +5,7 @@ orogen_package 'auv_avalon/orogen/avalon_back'
 orogen_package 'auv_avalon/orogen/avalon_front'
 orogen_package 'auv_avalon/orogen/low_level_driver'
 orogen_package 'image_processing/orogen/pipeline_inspection'
+orogen_package 'auv_avalon/orogen/asv'
 
 in_flavor 'master','next' do
     orogen_package 'auv_avalon/orogen/uw_particle_localization'

@@ -9,6 +9,7 @@ orogen_package 'image_processing/orogen/pipeline_inspection'
 orogen_package 'auv_avalon/orogen/asv'
 
 in_flavor 'master','next' do
+    orogen_package 'auv_avalon/orogen/modemdriver_tritech'
     orogen_package 'auv_avalon/orogen/uw_particle_localization'
     orogen_package 'auv_avalon/orogen/sonar_wall_hough'
     orogen_package 'auv_avalon/orogen/wall_servoing'

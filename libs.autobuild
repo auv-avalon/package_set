@@ -11,6 +11,7 @@ in_flavor 'master','next' do
     cmake_package 'auv_avalon/types'
     cmake_package 'auv_avalon/dsp_acoustics'
     cmake_package 'auv_avalon/machine_learning'
+    cmake_package 'auv_avalon/modemdriver_tritech'
     cmake_package 'image_processing/pipeline_inspection'
     cmake_package 'auv_avalon/visual_detectors'
 end

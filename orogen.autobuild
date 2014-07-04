@@ -7,6 +7,7 @@ orogen_package 'auv_avalon/orogen/avalon_front'
 orogen_package 'auv_avalon/orogen/low_level_driver'
 orogen_package 'image_processing/orogen/pipeline_inspection'
 orogen_package 'auv_avalon/orogen/asv'
+orogen_package 'auv_avalon/orogen/wall_orientation_correction'
 
 in_flavor 'master','next' do
     orogen_package 'auv_avalon/orogen/modemdriver_tritech'

@@ -2,6 +2,8 @@
 
 
 bundle_package 'bundles/avalon'
+bundle_package 'bundles/auv'
+bundle_package 'bundles/sauce'
 cmake_package 'auv_avalon/low_level_driver'
 
 in_flavor 'master','next' do

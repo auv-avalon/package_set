@@ -23,6 +23,14 @@ version_control:
   - bundles/avalon:
       github: auv-avalon/bundle
       branch: $ROCK_FLAVOR
+  
+  - bundles/auv:
+      github: auv-avalon/auv_bundle
+      branch: $ROCK_FLAVOR
+  
+  - bundles/sauce:
+      github: auv-avalon/sauce_bundle
+      branch: $ROCK_FLAVOR
 
   - image_processing/pipeline_inspection:
       github: auv-avalon/$PACKAGE_BASENAME 

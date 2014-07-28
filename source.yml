@@ -19,6 +19,10 @@ version_control:
   - auv_avalon/orogen/.*:
       github: auv-avalon/orogen-$PACKAGE_BASENAME 
       branch: $ROCK_FLAVOR
+  
+  - slam/orogen/auv_helper:
+      github: auv-avalon/orogen-$PACKAGE_BASENAME 
+      branch: $ROCK_FLAVOR
 
   - bundles/avalon:
       github: auv-avalon/bundle

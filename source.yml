@@ -33,7 +33,7 @@ version_control:
       branch: $ROCK_FLAVOR
   
   - bundles/sauce:
-      github: auv-avalon/sauce_bundle
+      github: auv-avalon/sauce-bundle
       branch: $ROCK_FLAVOR
 
   - image_processing/pipeline_inspection:

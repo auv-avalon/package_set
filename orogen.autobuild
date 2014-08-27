@@ -8,6 +8,7 @@ orogen_package 'auv_avalon/orogen/low_level_driver'
 orogen_package 'image_processing/orogen/pipeline_inspection'
 orogen_package 'auv_avalon/orogen/asv'
 orogen_package 'auv_avalon/orogen/wall_orientation_correction'
+orogen_package 'auv_avalon/orogen/sonar_feature_detector'
 
 orogen_package 'slam/orogen/auv_helper'
 

@@ -16,6 +16,7 @@ in_flavor 'master','next' do
     cmake_package 'auv_avalon/modemdriver_tritech'
     cmake_package 'image_processing/pipeline_inspection'
     cmake_package 'auv_avalon/visual_detectors'
+    cmake_package 'auv_avalon/arc_driver'
 end
 
 

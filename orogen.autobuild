@@ -10,10 +10,12 @@ orogen_package 'auv_avalon/orogen/asv'
 orogen_package 'auv_avalon/orogen/wall_orientation_correction'
 orogen_package 'auv_avalon/orogen/sonar_feature_detector'
 orogen_package 'auv_avalon/orogen/sonar_structure_servoing'
+orogen_package 'auv_avalon/orogen/modemCanReader'
 
 orogen_package 'slam/orogen/auv_helper'
 
 in_flavor 'master','next' do
+    orogen_package 'auv_avalon/orogen/rawControlCommandConverter'
     orogen_package 'auv_avalon/orogen/avalonControl'
     orogen_package 'auv_avalon/orogen/modemdriver_tritech'
     orogen_package 'auv_avalon/orogen/uw_particle_localization'

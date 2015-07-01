@@ -42,4 +42,14 @@ version_control:
     
   - image_processing/orogen/pipeline_inspection:
       github: auv-avalon/orogen-$PACKAGE_BASENAME 
-      branch: $ROCK_FLAVOR 
+      branch: $ROCK_FLAVOR
+      
+  - perception/apriltags:
+      type: archive
+      url: http://april.eecs.umich.edu/software/apriltag-2015-03-18.tgz
+      patches:
+         - $AUTOPROJ_SOURCE_DIR/patches/apriltags.patch
+         
+  - perception/orogen/apriltags:
+      github: dbcesar/perception-orogen-apriltags
+      branch: $ROCK_BRANCH        

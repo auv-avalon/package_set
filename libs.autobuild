@@ -5,6 +5,7 @@ bundle_package 'bundles/avalon'
 bundle_package 'bundles/auv'
 bundle_package 'bundles/sauce'
 cmake_package 'auv_avalon/low_level_driver'
+cmake_package 'perception/apriltags'
 
 in_flavor 'master','next' do
     cmake_package 'auv_avalon/uw_localization'
